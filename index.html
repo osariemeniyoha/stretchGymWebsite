@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stretch Gym</title>
+  <link rel="icon" type="image/x-icon" href="logo.png"/>
+    <!-- <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="shortcut icon" type="image/png" href="images/logo.png" /> -->
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <img src="images/logo.png" alt="Stretch Gym" />
+        <span>STRETCH</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"     class="nav-link">Home</a></li>
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#plans"    class="nav-link">Plans</a></li>
+        <li><a href="#blogs"    class="nav-link">Blog</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#plans" class="btn btn-ghost">Login</a>
+        <a href="#plans" class="btn btn-primary">Get Started</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#home"     class="nav-link">Home</a></li>
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#plans"    class="nav-link">Plans</a></li>
+        <li><a href="#blogs"    class="nav-link">Blog</a></li>
+      </ul>
+      <div class="mobile-actions">
+        <a href="#plans" class="btn btn-ghost">Login</a>
+        <a href="#plans" class="btn btn-primary">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="images/gymm.jpg" alt="Gym hero" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Welcome to Stretch Gym</p>
+      <h1 class="hero-title reveal">
+        FITNESS FOR<br /><span class="text-accent">EVERYBODY</span>
+      </h1>
+      <p class="hero-sub reveal">
+        Your journey to a healthier, stronger, and more confident version of yourself begins here, 
+        with the support, guidance, and motivation you need to succeed.
+      </p>
+      <div class="hero-btns reveal">
+        <a href="#plans"  class="btn btn-primary btn-lg">Start Today</a>
+        <a href="#about"  class="btn btn-outline btn-lg">Learn More</a>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </a>
+  </section>
+
+  <!--  STATS-->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <span class="stat-number" data-target="1200">0</span><span class="stat-plus">+</span>
+          <p>Active Members</p>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+          <p>Expert Trainers</p>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-number" data-target="8">0</span><span class="stat-plus">+</span>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-number" data-target="98">0</span><span class="stat-plus">%</span>
+          <p>Member Satisfaction</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-images reveal">
+          <div class="img-stack">
+            <img src="images/gym-house (2).jpg" alt="Gym interior" class="img-main" />
+            <img src="images/gym-house.jpg"     alt="Gym floor"    class="img-secondary" />
+            <div class="img-badge">
+              <span class="badge-number">8+</span>
+              <span class="badge-label">Years of<br/>Excellence</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text reveal">
+          <p class="section-eyebrow">About Us</p>
+          <h2 class="section-title">Your Journey to Fitness, Flexibility &amp; Confidence Starts Here.</h2>
+          <p class="about-desc">
+           At Stretch Gym, we believe fitness should stretch beyond physical limits, 
+           it's about empowering your body, mind, and lifestyle. Our certified trainers,
+           modern equipment, and tailored programs are designed to help you achieve your goals, 
+           no matter your starting point. 
+          </p>
+          <p class="about-desc">
+            From high-energy group classes to one-on-one personal coaching, we make fitness
+            approachable, effective, and sustainable.
+          </p>
+          <ul class="about-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Certified professional trainers
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              State-of-the-art equipment
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Personalised fitness programs
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Welcoming community atmosphere
+            </li>
+          </ul>
+          <a href="#plans" class="btn btn-primary btn-lg">Join Stretch Today</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--SERVICES -->
+  <section class="services" id="services">
+    <div class="services-bg">
+      <img src="images/gymm2.jpg" alt="Gym services background" />
+      <div class="services-overlay"></div>
+    </div>
+
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Our Services</p>
+        <h2 class="section-title">Everything You Need to<br/>Achieve Your Fitness Goals</h2>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3>Personal Training</h3>
+          <p>Work one-on-one with certified trainers who design a custom program just for you. 
+            Whether you're starting fresh or aiming for peak performance, 
+            our trainers keep you motivated and on track.</p>
+          <span class="service-tag">1-on-1 Sessions</span>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+              <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+              <line x1="9" y1="9" x2="9.01" y2="9"/>
+              <line x1="15" y1="9" x2="15.01" y2="9"/>
+            </svg>
+          </div>
+          <h3>Yoga &amp; Mobility</h3>
+          <p>Improve flexibility, reduce stress, and build balance through guided yoga and stretching sessions.
+             Perfect for recovery, injury prevention, and overall wellness.</p>
+          <span class="service-tag">All Levels Welcome</span>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <line x1="18" y1="20" x2="18" y2="10"/>
+              <line x1="12" y1="20" x2="12" y2="4"/>
+              <line x1="6"  y1="20" x2="6"  y2="14"/>
+            </svg>
+          </div>
+          <h3>Progress Tracking</h3>
+          <p>Stay motivated with body assessments, goal setting, and progress checks. 
+            See your improvements in strength, endurance, and overall health every step of the way.</p>
+          <span class="service-tag">Data-Driven Results</span>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+            </svg>
+          </div>
+          <h3>Community Bootcamps</h3>
+          <p>Join fun, high-energy group workouts designed to challenge you and build community. Push harder, stay consistent, and enjoy fitness alongside people who share your goals.</p>
+          <span class="service-tag">Group Energy</span>
+        </div>
+
+      </div>
+
+      <p class="services-note reveal">
+        At Stretch, we believe fitness is more than just lifting weights. Our services are designed
+        to help you train smarter, recover faster, and live healthier no matter your fitness level.
+      </p>
+    </div>
+  </section>
+
+  <!--  GALLERY STRIP  -->
+  <div class="gallery-strip">
+    <div class="gallery-track">
+      <img src="images/gymm1.jpg"               alt="Gym" />
+      <img src="images/gymm5.jpg"               alt="Gym" />
+      <img src="images/gymm6.jpg"               alt="Gym" />
+      <img src="images/background.jpg"          alt="Gym" />
+      <img src="images/background-img.jpg"      alt="Gym" />
+      <img src="images/3d-gym-equipment (1).jpg" alt="Gym" />
+      <img src="images/3d-gym-equipment.jpg"    alt="Gym" />
+      <!-- Duplicated for infinite scroll -->
+      <img src="images/gymm1.jpg"               alt="Gym" />
+      <img src="images/gymm5.jpg"               alt="Gym" />
+      <img src="images/gymm6.jpg"               alt="Gym" />
+      <img src="images/background.jpg"          alt="Gym" />
+      <img src="images/background-img.jpg"      alt="Gym" />
+      <img src="images/3d-gym-equipment (1).jpg" alt="Gym" />
+      <img src="images/3d-gym-equipment.jpg"    alt="Gym" />
+    </div>
+  </div>
+
+  <!-- PRICING  -->
+  <section class="pricing" id="plans">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Membership Plans</p>
+        <h2 class="section-title">Choose Your Path to Greatness</h2>
+        <p class="section-sub">Simple, transparent pricing with no hidden fees.</p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <div class="pricing-card reveal">
+          <div class="plan-name">Basic</div>
+          <div class="plan-price">
+            <span class="currency">$</span><span class="amount">30</span>
+            <span class="period">/month</span>
+          </div>
+          <p class="plan-tagline">Perfect if you're just starting out</p>
+          <ul class="plan-features">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Access to all gym equipment
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              2 group classes per week
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Progress tracking app access
+            </li>
+            <li class="disabled">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              Personal training sessions
+            </li>
+            <li class="disabled">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              Nutrition guidance
+            </li>
+          </ul>
+          <a href="#" class="btn btn-outline btn-full">Get Started</a>
+        </div>
+
+        <div class="pricing-card featured reveal">
+          <div class="popular-badge">Most Popular</div>
+          <div class="plan-name">Standard</div>
+          <div class="plan-price">
+            <span class="currency">$</span><span class="amount">45</span>
+            <span class="period">/month</span>
+          </div>
+          <p class="plan-tagline">Best balance of value and features</p>
+          <ul class="plan-features">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Unlimited gym access
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Unlimited group classes
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Monthly body assessments
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Discount on personal training
+            </li>
+            <li class="disabled">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              Nutrition guidance
+            </li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-full">Get Started</a>
+        </div>
+
+        <div class="pricing-card reveal">
+          <div class="plan-name">Premium</div>
+          <div class="plan-price">
+            <span class="currency">$</span><span class="amount">60</span>
+            <span class="period">/month</span>
+          </div>
+          <p class="plan-tagline">For serious results with expert support</p>
+          <ul class="plan-features">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              All Standard benefits
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              4 personal training sessions/month
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Expert nutrition guidance
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Priority bootcamp booking
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Dedicated trainer support
+            </li>
+          </ul>
+          <a href="#" class="btn btn-outline btn-full">Get Started</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--  BLOG  -->
+  <section class="blog" id="blogs">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Our Blog</p>
+        <h2 class="section-title">Fitness, Nutrition &amp; Motivation</h2>
+      </div>
+
+      <div class="blog-grid">
+
+        <div class="blog-featured reveal">
+          <div class="blog-featured-img">
+            <img src="images/people-exercising-gym.jpg" alt="People exercising" />
+            <span class="blog-tag">Workouts</span>
+          </div>
+          <div class="blog-featured-content">
+            <span class="blog-date">May 2025</span>
+            <h3>Beginner-Friendly Gym Workouts</h3>
+            <p>New to the gym? Start with these simple, effective exercises that build strength and confidence from your very first session.</p>
+            <a href="https://www.nuffieldhealth.com/article/gym-workouts-for-beginners" target="_blank" class="blog-link">
+              Read Article
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="blog-cards">
+
+          <div class="blog-card reveal">
+            <div class="blog-card-img">
+              <img src="images/gymm5.jpg" alt="Nutrition" />
+              <span class="blog-tag">Nutrition</span>
+            </div>
+            <div class="blog-card-content">
+              <span class="blog-date">Apr 2025</span>
+              <h3>Fuel Your Workout: Nutrition Basics</h3>
+              <p>Learn how to eat the right foods before and after your workout for the best results.</p>
+              <a href="https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/nutrition-basics/food-as-fuel-before-during-and-after-workouts" target="_blank" class="blog-link">
+                Read Article
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="blog-card reveal">
+            <div class="blog-card-img">
+              <img src="images/gymm6.jpg" alt="Motivation" />
+              <span class="blog-tag">Motivation</span>
+            </div>
+            <div class="blog-card-content">
+              <span class="blog-date">Mar 2025</span>
+              <h3>How to Stay Motivated at the Gym</h3>
+              <p>Consistency is key. Here are proven tips to keep your motivation strong all year long.</p>
+              <a href="https://www.planetfitness.com/blog/articles/lacking-motivation-here-are-15-tricks-get-you-gym" target="_blank" class="blog-link">
+                Read Article
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="cta-bg">
+      <img src="images/gymm1.jpg" alt="CTA background" />
+      <div class="cta-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2>Ready to Transform Your Life?</h2>
+        <p>Join over 1,200 members already pushing their limits at Stretch Gym.</p>
+        <div class="cta-btns">
+          <a href="#plans" class="btn btn-primary btn-lg">Start Your Journey</a>
+          <a href="#about" class="btn btn-outline btn-lg">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="Stretch Gym" />
+            <span>STRETCH</span>
+          </div>
+          <p>Your journey to a healthier, stronger, and more confident version of yourself starts here.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#plans">Membership Plans</a></li>
+            <li><a href="#blogs">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Personal Training</a></li>
+            <li><a href="#services">Yoga &amp; Mobility</a></li>
+            <li><a href="#services">Progress Tracking</a></li>
+            <li><a href="#services">Community Bootcamps</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Nigeria
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 11.9a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.59a16 16 0 0 0 6 6l.91-1.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +234 1234567890
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              iyohapreciousosariemen@gmail.com
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Stretch Gym. All rights reserved.</p>
+        <p>Designed with passion for fitness.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <script src="script.js"></script> -->
+</body>
+</html>
