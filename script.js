@@ -1,8 +1,7 @@
-/* ═══════════════════════════════════════════════
-   STRETCH GYM — Modern Script
-   ═══════════════════════════════════════════════ */
+/* Auto-populate footer year */
+document.getElementById('year').textContent = new Date().getFullYear();
 
-/* ── Navbar scroll effect ── */
+/* Navbar scroll effect  */
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 40) {
@@ -12,7 +11,7 @@ window.addEventListener('scroll', () => {
   }
 }, { passive: true });
 
-/* ── Hamburger / Mobile menu ── */
+/* Hamburger / Mobile menu */
 const hamburger  = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobileMenu');
 
@@ -31,7 +30,7 @@ document.querySelectorAll('.mobile-menu .nav-link').forEach(link => {
   });
 });
 
-/* ── Active nav link on scroll ── */
+/*  Active nav link on scroll */
 const sections  = document.querySelectorAll('section[id], header[id]');
 const navLinks  = document.querySelectorAll('.nav-link');
 
@@ -52,7 +51,7 @@ function setActiveLink() {
 
 window.addEventListener('scroll', setActiveLink, { passive: true });
 
-/* ── Reveal on scroll (Intersection Observer) ── */
+/* Reveal on scroll */
 const revealEls = document.querySelectorAll('.reveal');
 
 const revealObserver = new IntersectionObserver((entries) => {
@@ -73,7 +72,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 revealEls.forEach(el => revealObserver.observe(el));
 
-/* ── Counter animation ── */
+/* Counter animation */
 const counters = document.querySelectorAll('.stat-number');
 let countersStarted = false;
 
@@ -105,7 +104,7 @@ const statsObserver = new IntersectionObserver((entries) => {
 
 if (statsSection) statsObserver.observe(statsSection);
 
-/* ── Smooth scroll for anchor links ── */
+/* Smooth scroll for anchor links */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', (e) => {
     const target = document.querySelector(anchor.getAttribute('href'));
